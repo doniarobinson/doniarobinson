@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import { App } from "./App";
-import { mergeStyles } from "@fluentui/merge-styles";
+import { mergeStyles } from "@fluentui/merge-styles/lib";
 
 // Inject some global styles
 mergeStyles({
