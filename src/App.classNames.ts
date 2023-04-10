@@ -1,4 +1,4 @@
-import { mergeStyleSets } from "@fluentui/merge-styles";
+import { mergeStyleSets } from "@fluentui/merge-styles/lib/mergeStyleSets";
 
 export interface IComponentClassNames {
   gridNoPadding: string;
