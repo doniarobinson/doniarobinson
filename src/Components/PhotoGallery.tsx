@@ -6,8 +6,7 @@ const PhotoGallery: React.FunctionComponent = () => {
   //const { banner, bannerImg } = getClassNames();
   return (
     <section>
-      <p>Mixed Photo Gallery</p>
-      <Gallery images={france} />
+      <Gallery images={france} rowHeight={300} />
     </section>
   );
 };

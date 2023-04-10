@@ -1,8 +1,36 @@
+const longSide = 400;
+const shortSide = 300;
+
 const france = [
   {
-    src: "https://doniarobinson.com/img/france/france1.jpg",
-    width: 400,
-    height: 300,
+    src: "img/france/channel.jpg",
+    width: longSide,
+    height: shortSide,
+  },
+  {
+    src: "img/france/ornatehouses.jpg",
+    width: shortSide,
+    height: longSide,
+  },
+  {
+    src: "img/france/fence.jpg",
+    width: longSide,
+    height: shortSide,
+  },
+  {
+    src: "img/france/cliffs1.jpg",
+    width: shortSide,
+    height: longSide,
+  },
+  {
+    src: "img/france/hiddenpath.jpg",
+    width: shortSide,
+    height: longSide,
+  },
+  {
+    src: "img/france/benchbysea.jpg",
+    width: longSide,
+    height: shortSide,
   },
 ];
 

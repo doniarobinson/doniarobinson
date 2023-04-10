@@ -7,6 +7,7 @@ import {
   FontWeights,
   IStackTokens,
   IStackStyles,
+  IStackItemStyles,
   ITextStyles,
 } from "@fluentui/react";
 
@@ -20,27 +21,34 @@ const boldStyle: Partial<ITextStyles> = {
 const stackTokens: IStackTokens = { childrenGap: 15 };
 const stackStyles: Partial<IStackStyles> = {
   root: {
-    width: "960px",
-    margin: "0 auto",
-    textAlign: "center",
-    color: "#605e5c",
+    width: "100%",
+    margin: "0",
+    backgroundColor: "#cccccc",
+  },
+};
+
+const headerStyle: IStackItemStyles = {
+  root: {
+    backgroundColor: "#35B0AB",
   },
 };
 
 export const App: React.FunctionComponent = () => {
-  const { gridNoPadding } = getClassNames();
   return (
-    <div className={`ms-Grid ${gridNoPadding}`}>
-      <div className="ms-Grid-row">
-        <div className="ms-Grid-col ms-sm12">
+    <>
+      <Stack horizontal tokens={stackTokens} styles={stackStyles}>
+        <Stack.Item grow={1} styles={headerStyle}>
           <Header />
-        </div>
-        <div className="ms-Grid-col ms-hiddenSm ms-md5 ms-lg4 ms-xl3">
+        </Stack.Item>
+      </Stack>
+      <Stack horizontal tokens={stackTokens} styles={stackStyles}>
+        <Stack.Item>
           <SiteNav />
-        </div>
-        <div className="ms-Grid-col ms-sm12 ms-md7 ms-lg8 ms-xl9">
+        </Stack.Item>
+        <Stack.Item grow>
           <PhotoGallery />
-        </div>
+        </Stack.Item>
+
         {/*<Text variant="xxLarge" styles={boldStyle}>
         Welcome to your Fluent UI app
       </Text>
@@ -62,7 +70,7 @@ export const App: React.FunctionComponent = () => {
         <Link href="https://developer.microsoft.com/en-us/fluentui#/styles/web">Styles</Link>
         <Link href="https://aka.ms/themedesigner">Theme designer</Link>
   </Stack>*/}
-      </div>
-    </div>
+      </Stack>
+    </>
   );
 };

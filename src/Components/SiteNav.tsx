@@ -7,7 +7,7 @@ import {
 
 const navStyles: Partial<INavStyles> = {
   root: {
-    width: 208,
+    width: 200,
     height: "calc(100vh - 200px)",
     boxSizing: "border-box",
     border: "1px solid #eee",
