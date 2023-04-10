@@ -23,7 +23,6 @@ const stackStyles: Partial<IStackStyles> = {
   root: {
     width: "100%",
     margin: "0",
-    backgroundColor: "#cccccc",
   },
 };
 
