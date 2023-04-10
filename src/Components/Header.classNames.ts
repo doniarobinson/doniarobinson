@@ -8,7 +8,6 @@ export interface IComponentClassNames {
 export const getClassNames = (): IComponentClassNames => {
   return mergeStyleSets({
     banner: {
-      backgroundColor: "#35B0AB",
       textAlign: "center",
     },
     bannerImg: {
