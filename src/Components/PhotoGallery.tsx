@@ -1,12 +1,12 @@
 import { Gallery } from "react-grid-gallery";
 import { france } from "../assets/img/galleries";
-/*import { getClassNames } from "./Header.classNames";*/
+import { getClassNames } from "./PhotoGallery.classNames";
 
 const PhotoGallery: React.FunctionComponent = () => {
-  //const { banner, bannerImg } = getClassNames();
+  const { sectionStyles } = getClassNames();
   return (
-    <section>
-      <Gallery images={france} rowHeight={300} />
+    <section className={sectionStyles}>
+      <Gallery images={france} maxRows={2} rowHeight={275} />
     </section>
   );
 };

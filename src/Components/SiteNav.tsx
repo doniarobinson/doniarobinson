@@ -8,7 +8,7 @@ import {
 const navStyles: Partial<INavStyles> = {
   root: {
     width: 200,
-    height: "calc(100vh - 200px)",
+    height: "calc(100vh - 110px)",
     boxSizing: "border-box",
     border: "1px solid #eee",
     overflowY: "auto",

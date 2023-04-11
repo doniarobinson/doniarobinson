@@ -2,9 +2,9 @@ import { getClassNames } from "./Header.classNames";
 import bannerImgSrc from "../assets/img/banner.png";
 
 const Header: React.FunctionComponent = () => {
-  const { banner, bannerImg } = getClassNames();
+  const { bannerImg } = getClassNames();
   return (
-    <section className={banner}>
+    <section>
       <img src={bannerImgSrc} className={bannerImg} alt="Donia Robinson" />
     </section>
   );

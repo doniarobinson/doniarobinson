@@ -12,13 +12,14 @@ import {
 } from "@fluentui/react";
 
 import Header from "./Components/Header";
-import SiteNav from "./Components/SiteNav";
+// import SiteNav from "./Components/SiteNav";
 import PhotoGallery from "./Components/PhotoGallery";
+// import { DefaultPalette } from "@fluentui/react/lib/Styling";
 
 const boldStyle: Partial<ITextStyles> = {
   root: { fontWeight: FontWeights.semibold },
 };
-const stackTokens: IStackTokens = { childrenGap: 15 };
+const stackTokens: IStackTokens = { childrenGap: 5 };
 const stackStyles: Partial<IStackStyles> = {
   root: {
     width: "100%",
@@ -29,26 +30,11 @@ const stackStyles: Partial<IStackStyles> = {
 const headerStyle: IStackItemStyles = {
   root: {
     backgroundColor: "#35B0AB",
+    textAlign: "center",
   },
 };
 
-export const App: React.FunctionComponent = () => {
-  return (
-    <>
-      <Stack horizontal tokens={stackTokens} styles={stackStyles}>
-        <Stack.Item grow={1} styles={headerStyle}>
-          <Header />
-        </Stack.Item>
-      </Stack>
-      <Stack horizontal tokens={stackTokens} styles={stackStyles}>
-        <Stack.Item>
-          <SiteNav />
-        </Stack.Item>
-        <Stack.Item grow>
-          <PhotoGallery />
-        </Stack.Item>
-
-        {/*<Text variant="xxLarge" styles={boldStyle}>
+/*<Text variant="xxLarge" styles={boldStyle}>
         Welcome to your Fluent UI app
       </Text>
       <Text variant="large">For a guide on how to customize this project, check out the Fluent UI documentation.</Text>
@@ -68,8 +54,18 @@ export const App: React.FunctionComponent = () => {
         <Link href="https://developer.microsoft.com/en-us/fluentui#/styles/web/icons">Icons</Link>
         <Link href="https://developer.microsoft.com/en-us/fluentui#/styles/web">Styles</Link>
         <Link href="https://aka.ms/themedesigner">Theme designer</Link>
-  </Stack>*/}
+  </Stack>*/
+
+export const App: React.FunctionComponent = () => {
+  return (
+    <>
+      <Stack enableScopedSelectors tokens={stackTokens} styles={stackStyles}>
+        <Stack.Item align="stretch" styles={headerStyle}>
+          <Header />
+        </Stack.Item>
       </Stack>
+
+      <PhotoGallery />
     </>
   );
 };
