@@ -1,13 +1,13 @@
 import { mergeStyleSets } from "@fluentui/merge-styles/lib/mergeStyleSets";
 
 export interface IComponentClassNames {
-  gridNoPadding: string;
+  sectionStyles: string;
 }
 
 export const getClassNames = (): IComponentClassNames => {
   return mergeStyleSets({
-    gridNoPadding: {
-      padding: "0 !important",
+    sectionStyles: {
+      padding: "10px 0",
     },
   });
 };

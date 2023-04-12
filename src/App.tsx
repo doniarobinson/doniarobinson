@@ -1,24 +1,17 @@
 import React from "react";
-import { getClassNames } from "./App.classNames";
+
 import {
   Stack,
-  Text,
-  Link,
-  FontWeights,
   IStackTokens,
   IStackStyles,
   IStackItemStyles,
-  ITextStyles,
 } from "@fluentui/react";
 
 import Header from "./Components/Header";
 // import SiteNav from "./Components/SiteNav";
+import About from "./Components/About";
 import PhotoGallery from "./Components/PhotoGallery";
-// import { DefaultPalette } from "@fluentui/react/lib/Styling";
 
-const boldStyle: Partial<ITextStyles> = {
-  root: { fontWeight: FontWeights.semibold },
-};
 const stackTokens: IStackTokens = { childrenGap: 5 };
 const stackStyles: Partial<IStackStyles> = {
   root: {
@@ -65,6 +58,7 @@ export const App: React.FunctionComponent = () => {
         </Stack.Item>
       </Stack>
 
+      <About />
       <PhotoGallery />
     </>
   );

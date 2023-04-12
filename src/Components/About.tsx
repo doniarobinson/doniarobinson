@@ -1,16 +1,14 @@
 import { Text } from "@fluentui/react";
-import { Gallery } from "react-grid-gallery";
-import { france } from "../assets/img/galleries";
-import { getClassNames } from "./PhotoGallery.classNames";
+
+import { getClassNames } from "./About.classNames";
 
 const PhotoGallery: React.FunctionComponent = () => {
   const { sectionStyles } = getClassNames();
   return (
     <section className={sectionStyles}>
       <Text variant={"mega"} block>
-        😍
+        <span>&#128105;&#127996;&#8205;&#128187;</span> (About)
       </Text>
-      <Gallery images={france} maxRows={2} rowHeight={275} />
     </section>
   );
 };
