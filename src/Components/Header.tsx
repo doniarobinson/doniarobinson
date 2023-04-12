@@ -1,11 +1,15 @@
-import { getClassNames } from "./Header.classNames";
+import CSS from "csstype";
 import bannerImgSrc from "../assets/img/banner.png";
 
 const Header: React.FunctionComponent = () => {
-  const { bannerImg } = getClassNames();
+  const bannerImg: CSS.Properties = {
+    maxWidth: "100%",
+    maxHeight: "150px",
+  };
+
   return (
     <section>
-      <img src={bannerImgSrc} className={bannerImg} alt="Donia Robinson" />
+      <img src={bannerImgSrc} style={bannerImg} alt="Donia Robinson" />
     </section>
   );
 };

@@ -1,12 +1,16 @@
 import { Text } from "@fluentui/react";
 import { Gallery } from "react-grid-gallery";
 import { france } from "../assets/img/galleries";
-import { getClassNames } from "./PhotoGallery.classNames";
+import CSS from "csstype";
 
 const PhotoGallery: React.FunctionComponent = () => {
-  const { sectionStyles } = getClassNames();
+  const sectionStyles: CSS.Properties = {
+    backgroundColor: "#BFBCCB",
+    padding: "10px 0",
+  };
+
   return (
-    <section className={sectionStyles}>
+    <section style={sectionStyles}>
       <Text variant={"mega"} block>
         😍
       </Text>
