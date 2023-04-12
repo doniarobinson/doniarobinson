@@ -1,7 +1,6 @@
-import { Text } from "@fluentui/react";
 import { Gallery } from "react-grid-gallery";
-import { france } from "../assets/img/galleries";
 import CSS from "csstype";
+import { france } from "../assets/img/galleries";
 
 const PhotoGallery: React.FunctionComponent = () => {
   const sectionStyles: CSS.Properties = {
@@ -11,9 +10,7 @@ const PhotoGallery: React.FunctionComponent = () => {
 
   return (
     <section style={sectionStyles}>
-      <Text variant={"mega"} block>
-        😍
-      </Text>
+      <h1>😍</h1>
       <Gallery images={france} maxRows={2} rowHeight={275} />
     </section>
   );

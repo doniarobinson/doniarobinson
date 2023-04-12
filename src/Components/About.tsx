@@ -1,4 +1,3 @@
-import { Text } from "@fluentui/react";
 import CSS from "csstype";
 
 const PhotoGallery: React.FunctionComponent = () => {
@@ -8,9 +7,9 @@ const PhotoGallery: React.FunctionComponent = () => {
 
   return (
     <section style={sectionStyles}>
-      <Text variant={"mega"} block>
+      <h1>
         <span>&#128105;&#127996;&#8205;&#128187;</span> (About)
-      </Text>
+      </h1>
     </section>
   );
 };
