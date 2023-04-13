@@ -10,3 +10,13 @@ body {
 code {
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; */
 }
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+.parallax-container .section {
+  width: 100%;
+}

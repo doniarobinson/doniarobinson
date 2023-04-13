@@ -4,7 +4,7 @@ import { france } from "../assets/img/galleries";
 
 const PhotoGallery: React.FunctionComponent = () => {
   const sectionStyles: CSS.Properties = {
-    backgroundColor: "#BFBCCB",
+    //backgroundColor: "#BFBCCB",
     padding: "10px 0",
   };
 

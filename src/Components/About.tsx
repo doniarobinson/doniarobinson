@@ -8,7 +8,7 @@ const PhotoGallery: React.FunctionComponent = () => {
   return (
     <section style={sectionStyles}>
       <h1>
-        <span>&#128105;&#127996;&#8205;&#128187;</span> (About)
+        <span>&#128105;&#127996;&#8205;&#128187;</span>
       </h1>
     </section>
   );
