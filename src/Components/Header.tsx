@@ -1,4 +1,3 @@
-import CSS from "csstype";
 import bannerImgSrc from "../assets/img/bench.png";
 
 const Header: React.FunctionComponent = () => {
