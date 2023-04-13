@@ -1,6 +1,3 @@
-import { Gallery } from "react-grid-gallery";
-import { france } from "../assets/img/galleries";
-
 const PhotoGallery: React.FunctionComponent = () => {
   /*const sectionStyles: CSS.Properties = {
     padding: "10px 0",
@@ -8,8 +5,9 @@ const PhotoGallery: React.FunctionComponent = () => {
 
   return (
     <section>
-      <h1>😍</h1>
-      <Gallery images={france} maxRows={2} rowHeight={275} />
+      <h1>
+        <span>&#128105;&#127996;&#8205;&#128187;</span>
+      </h1>
     </section>
   );
 };
