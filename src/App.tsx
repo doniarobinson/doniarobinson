@@ -1,9 +1,8 @@
 import React from "react";
-import "materialize-css/dist/css/materialize.min.css";
-import "materialize-css/dist/js/materialize.min.js";
 import Header from "./Components/Header";
 import About from "./Components/About";
 import PhotoGallery from "./Components/PhotoGallery";
+import Footer from "./Components/Footer";
 
 export const App: React.FunctionComponent = () => {
   /*const appStyles: CSS.Properties = {
@@ -23,6 +22,8 @@ export const App: React.FunctionComponent = () => {
       <About />
 
       <PhotoGallery />
+
+      <Footer />
     </>
   );
 };

@@ -3,7 +3,7 @@ const shortSide = 300;
 
 const france = [
   {
-    src: "img/france/benchbysea.jpg",
+    src: "img/france/fence.jpg",
     width: longSide,
     height: shortSide,
   },
@@ -13,14 +13,14 @@ const france = [
     height: longSide,
   },
   {
-    src: "img/france/fence.jpg",
-    width: longSide,
-    height: shortSide,
-  },
-  {
     src: "img/france/cliffs1.jpg",
     width: shortSide,
     height: longSide,
+  },
+  {
+    src: "img/france/channel.jpg",
+    width: longSide,
+    height: shortSide,
   },
   {
     src: "img/france/hiddenpath.jpg",

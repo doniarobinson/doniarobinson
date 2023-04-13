@@ -1,4 +1,4 @@
-import bannerImgSrc from "../assets/img/bench.png";
+import bannerImgSrc from "../assets/img/bench.jpg";
 
 const Header: React.FunctionComponent = () => {
   return (
@@ -7,23 +7,12 @@ const Header: React.FunctionComponent = () => {
         <div className="container">
           <br />
           <br />
-          <h1 className="header center teal-text text-lighten-3">
-            Donia Robinson
-          </h1>
-          <div className="row center">
+          <div className="row center shadowed">
+            <h1 className="header center">Donia Robinson</h1>
             <h5 className="header col s12 light">
               Full stack developer before it was cool
             </h5>
           </div>
-          {/*<div className="row center">
-            <a
-              href=""
-              id="download-button"
-              className="btn-large waves-effect waves-light teal lighten-1"
-            >
-              Get Started
-  </a>
-          </div>*/}
           <br />
           <br />
         </div>
