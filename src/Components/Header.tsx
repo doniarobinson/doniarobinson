@@ -1,8 +1,11 @@
-import bannerImgSrc from "../assets/img/bench.jpg";
+import bannerImgSrc from "../assets/img/bench.png";
 
 const Header: React.FunctionComponent = () => {
   return (
     <div className="parallax-container">
+      <div className="parallax">
+        <img src={bannerImgSrc} alt="bench looking out over English Channel" />
+      </div>
       <div className="section no-pad-bot">
         <div className="container">
           <br />
@@ -16,9 +19,6 @@ const Header: React.FunctionComponent = () => {
           <br />
           <br />
         </div>
-      </div>
-      <div className="parallax">
-        <img src={bannerImgSrc} alt="bench looking out over English Channel" />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const PhotoGallery: React.FunctionComponent = () => {
   return (
     <section>
       <h1>😍</h1>
-      <Gallery images={france} maxRows={2} rowHeight={275} />
+      <Gallery images={france} maxRows={1} rowHeight={275} />
     </section>
   );
 };

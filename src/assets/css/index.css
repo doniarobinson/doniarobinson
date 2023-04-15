@@ -45,13 +45,20 @@ nav ul > li {
   border-right: 1px solid var(--mywhite);
 }
 
+.mobile-menu {
+  color: var(--myred);
+}
+
+#nav-mobile li {
+  background-color: var(--myred);
+}
+
 .shadowed {
   background-color: rgba(0, 0, 0, 0.16);
 }
 
-.parallax img {
-  max-width: 100%;
-  height: auto;
+.parallax-container .parallax img {
+  width: 100%;
 }
 
 h1 {
@@ -62,3 +69,8 @@ h1 {
 .page-footer {
   background-color: var(--myred);
 }
+
+/*.page-footer .col {
+  height: 50px;
+  margin: auto 0;
+}*/
