@@ -4,8 +4,8 @@ const Footer: React.FunctionComponent = () => {
       <div className="container">
         <div className="row">
           <div className="col l6 s12">
-            <h4>Contact Us</h4>
-            <p className="left-align light">Lorem ipsum dolor sit</p>
+            <h4>Contact</h4>
+            <p className="left-align light"></p>
           </div>
         </div>
       </div>

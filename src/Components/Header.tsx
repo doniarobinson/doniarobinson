@@ -18,7 +18,7 @@ const Header: React.FunctionComponent = () => {
         </div>
       </div>
       <div className="parallax">
-        <img src={bannerImgSrc} alt="Donia Robinson" />
+        <img src={bannerImgSrc} alt="bench looking out over English Channel" />
       </div>
     </div>
   );

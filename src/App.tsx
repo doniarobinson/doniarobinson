@@ -1,4 +1,5 @@
 import React from "react";
+import Nav from "./Components/Nav";
 import Header from "./Components/Header";
 import About from "./Components/About";
 import PhotoGallery from "./Components/PhotoGallery";
@@ -11,18 +12,10 @@ export const App: React.FunctionComponent = () => {
 
   return (
     <>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Nav />
       <Header />
-
       <About />
-
       <PhotoGallery />
-
       <Footer />
     </>
   );

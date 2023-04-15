@@ -1,16 +1,21 @@
 :root {
-  --verdigris: #35b0ab;
-  --amaranth: #db324d;
+  --mygreen: #35b0ab;
+  --myred: #ff6666;
+  --mywhite: #f7f4f3;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #f7f4f3;
+  background-color: var(--mywhite);
 }
 
 code {
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; */
+}
+
+#logo-container {
+  max-height: 100%;
 }
 
 .parallax-container {
@@ -23,19 +28,37 @@ code {
   width: 100%;
 }
 
-.verdigris {
-  color: var(--verdigris);
+.mygreen {
+  color: var(--mygreen);
 }
 
-h1 {
-  color: var(--verdigris);
-  font-weight: strong;
+.mywhite-bg {
+  background-color: var(--mywhite);
+}
+
+.myred-bg {
+  background-color: var(--myred);
+}
+
+nav ul > li {
+  background-color: var(--myred);
+  border-right: 1px solid var(--mywhite);
 }
 
 .shadowed {
   background-color: rgba(0, 0, 0, 0.16);
 }
 
+.parallax img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: var(--mygreen);
+  font-weight: strong;
+}
+
 .page-footer {
-  background-color: var(--amaranth);
+  background-color: var(--myred);
 }
