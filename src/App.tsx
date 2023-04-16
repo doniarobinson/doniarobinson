@@ -1,9 +1,9 @@
 import React from "react";
-import "materialize-css/dist/css/materialize.min.css";
-import "materialize-css/dist/js/materialize.min.js";
+import Nav from "./Components/Nav";
 import Header from "./Components/Header";
 import About from "./Components/About";
 import PhotoGallery from "./Components/PhotoGallery";
+import Footer from "./Components/Footer";
 
 export const App: React.FunctionComponent = () => {
   /*const appStyles: CSS.Properties = {
@@ -12,17 +12,11 @@ export const App: React.FunctionComponent = () => {
 
   return (
     <>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Nav />
       <Header />
-
       <About />
-
       <PhotoGallery />
+      <Footer />
     </>
   );
 };
