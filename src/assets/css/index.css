@@ -2,16 +2,13 @@
   --mygreen: #35b0ab;
   --myred: #ff6666;
   --mywhite: #f7f4f3;
+  --myblue: #22577a;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: var(--mywhite);
-}
-
-code {
-  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; */
 }
 
 #logo-container {
@@ -66,11 +63,37 @@ h1 {
   font-weight: strong;
 }
 
-.page-footer {
-  background-color: var(--myred);
+#about {
+  padding-top: 64px;
 }
 
-/*.page-footer .col {
-  height: 50px;
-  margin: auto 0;
-}*/
+.page-footer {
+  background-color: var(--myred);
+  padding: 20px 0;
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.page-footer h5 {
+  margin: 0;
+}
+
+.page-footer li {
+  display: inline;
+  padding-right: 8px;
+}
+
+.page-footer a {
+  color: var(--mywhite);
+}
