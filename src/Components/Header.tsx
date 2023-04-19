@@ -1,4 +1,4 @@
-import bannerImgSrc from "../assets/img/bench.png";
+import bannerImgSrc from "../assets/img/bench.jpg";
 
 const Header: React.FunctionComponent = () => {
   return (

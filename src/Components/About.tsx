@@ -1,7 +1,8 @@
 const PhotoGallery: React.FunctionComponent = () => {
   return (
     <section className="container">
-      <h2 id="about">
+      <a className="anchor" id="about" aria-hidden="true"></a>
+      <h2>
         <span>&#128105;&#127996;&#8205;&#128187;</span> About
       </h2>
       <p>

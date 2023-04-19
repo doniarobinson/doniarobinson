@@ -6,17 +6,17 @@ const Footer: React.FunctionComponent = () => {
     <footer className="page-footer">
       <div className="container">
         <span className="footer-info">
-          <h5>DR &copy;2023</h5>
+          <p>DR &copy;2023</p>
         </span>
-        <span className="footer-links">
-          <ul>
+        <span>
+          <ul className="footer-links">
             <li>
               <a
                 href="https://www.linkedin.com/in/doniarobinson/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <LinkedInIcon fontSize="large" />
+                <LinkedInIcon fontSize="medium" />
               </a>
             </li>
             <li>
@@ -25,7 +25,7 @@ const Footer: React.FunctionComponent = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <GitHubIcon fontSize="large" />
+                <GitHubIcon fontSize="medium" />
               </a>
             </li>
           </ul>
