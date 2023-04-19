@@ -11,6 +11,18 @@ body {
   background-color: var(--mywhite);
 }
 
+.mygreen {
+  color: var(--mygreen);
+}
+
+.mywhite-bg {
+  background-color: var(--mywhite);
+}
+
+.myred-bg {
+  background-color: var(--myred);
+}
+
 #logo-container {
   max-height: 100%;
 }
@@ -23,18 +35,6 @@ body {
 }
 .parallax-container .section {
   width: 100%;
-}
-
-.mygreen {
-  color: var(--mygreen);
-}
-
-.mywhite-bg {
-  background-color: var(--mywhite);
-}
-
-.myred-bg {
-  background-color: var(--myred);
 }
 
 nav ul > li {
@@ -63,8 +63,15 @@ h1 {
   font-weight: strong;
 }
 
-#about {
-  padding-top: 64px;
+a.anchor {
+  display: block;
+  position: relative;
+  top: -64px;
+  visibility: hidden;
+}
+
+h2 {
+  padding-top: 20px;
 }
 
 .page-footer {
@@ -81,19 +88,22 @@ h1 {
   display: flex;
 }
 
-.footer-links {
-  display: flex;
+.page-footer p {
+  margin: 0 15px 0 0;
 }
 
-.page-footer h5 {
+.footer-links {
+  display: flex;
   margin: 0;
+  text-align: center;
 }
 
 .page-footer li {
-  display: inline;
+  display: inline-flex;
   padding-right: 8px;
 }
 
 .page-footer a {
   color: var(--mywhite);
+  line-height: 0.75rem;
 }
